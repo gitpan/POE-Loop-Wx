@@ -1,0 +1,11 @@
+Changes
+example/Brain.pm
+example/DemoApp.pm
+example/Pobject.pm
+example/Viewer.pm
+example/main.pl
+MANIFEST
+META.yml # Will be created by "make dist"
+Makefile.PL
+README
+lib/POE/Loop/Wx.pm

@@ -1,4 +1,8 @@
 Revision history for POE::Loop::Wx
 
+0.02
+	! Cleaned up some POD
+   ! consolidated the eample code into single script
+
 0.01
-	- Initial version based on work by Mattia Barbon
+	+ Initial version based on work by Mattia Barbon

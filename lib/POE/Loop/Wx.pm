@@ -5,7 +5,7 @@
 ## Created:     26/05/2003
 ## Updated by:  Mike Schroeder - to be compatible with POE 3.003
 ## Updated:     21/12/2004
-## RCS-ID:      $Id: Wx.pm,v 1.1 2005/03/14 01:10:02 mike Exp $
+## RCS-ID:      $Id: Wx.pm,v 1.3 2005/03/14 16:49:21 mike Exp $
 ## Copyright:   (c) 2003 Mattia Barbon
 ## Note:        Part of the code comes almost straight from
 ##              POE::Loop::Gtk and POE::Loop::Select
@@ -20,7 +20,7 @@ use strict;
 use vars qw($VERSION); 
 use POE::Loop::PerlSignals;
 
-$VERSION = "0.01";
+$VERSION = "0.02";
 
 package POE::Kernel;
 
@@ -298,7 +298,7 @@ Ed Heil <ed-cpan@donorware.com>
 
 =head1 ACKNOWLEGEMENTS
 
-Special thanks to Matta Barbon for getting the initial version of this
+Special thanks to Mattia Barbon for getting the initial version of this
 put together and encouraging me to get this onto CPAN.
 
 Please see L<POE> for more information about authors, contributors,

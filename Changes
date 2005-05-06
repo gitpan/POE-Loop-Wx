@@ -1,5 +1,7 @@
 Revision history for POE::Loop::Wx
 
+0.03
+	+ Add two more example scripts to the example dir
 0.02
 	! Cleaned up some POD
    ! consolidated the eample code into single script

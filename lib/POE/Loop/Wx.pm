@@ -20,7 +20,7 @@ use strict;
 use vars qw($VERSION); 
 use POE::Loop::PerlSignals;
 
-$VERSION = "0.02";
+$VERSION = "0.03";
 
 package POE::Kernel;
 

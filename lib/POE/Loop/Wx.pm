@@ -5,7 +5,7 @@
 ## Created:     26/05/2003
 ## Updated by:  Mike Schroeder - to be compatible with POE 3.003
 ## Updated:     21/12/2004
-## RCS-ID:      $Id: Wx.pm,v 1.3 2005/03/14 16:49:21 mike Exp $
+## RCS-ID:      $Id: Wx.pm,v 1.9 2007/11/29 16:33:19 mike Exp $
 ## Copyright:   (c) 2003 Mattia Barbon
 ## Note:        Part of the code comes almost straight from
 ##              POE::Loop::Gtk and POE::Loop::Select
@@ -20,7 +20,7 @@ use strict;
 use vars qw($VERSION); 
 use POE::Loop::PerlSignals;
 
-$VERSION = "0.03";
+$VERSION = "0.04";
 
 package POE::Kernel;
 
@@ -234,11 +234,11 @@ sub Notify {
     return unless @filenos;
 
     # Check filehandles, or wait for a period of time to elapse.
-    my $hits = select( my $rout = $loop_vectors[MODE_RD],
-                       my $wout = $loop_vectors[MODE_WR],
-                       my $eout = $loop_vectors[MODE_EX],
-                       0,
-                     );
+    my $hits = CORE::select( my $rout = $loop_vectors[MODE_RD],
+                             my $wout = $loop_vectors[MODE_WR],
+                             my $eout = $loop_vectors[MODE_EX],
+                             0,
+                           );
 
     return unless $hits > 0;
 
